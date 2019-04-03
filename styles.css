@@ -289,7 +289,7 @@ display: none;
 
 .nav a {
   text-decoration: none;
-  color: #1e7ba8;
+  color: #357290;
   margin-bottom: 2em;
   font-size: 20px;
 }
@@ -329,7 +329,7 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: #1e7ba8;
+  color: #6fc5d6;
 }
 .nav a:hover {
   color: white;
@@ -609,6 +609,9 @@ display: none;
 }
 .main-nav {
   display: none;
+}
+header{
+ margin-top: -75px
 }
 
 .card{
