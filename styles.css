@@ -94,7 +94,6 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: center;
-  font-style: italic;
   background: #137acca8;
   border-bottom: 4px solid 	#960088;
   border-radius: 6px;
@@ -107,7 +106,6 @@ header .profile-image:hover {
     padding: 20px 40px 40px;
     max-width: 500px;
     text-align: center;
-    font-style: italic;
     background: #137acc59;
     border-bottom: 4px solid 	#960088;
     border-radius: 6px;
@@ -240,6 +238,7 @@ h2 {
 
 .card a:hover, .shortCard a:hover{
   color: #e8a87c;
+  font-style: italic;
 }
 
 
