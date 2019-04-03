@@ -86,8 +86,8 @@ header .profile-image:hover {
   margin: 10px auto;
 }
 .location {
-  background-color: #222;
-  color: #03446b;
+  background-color: black;
+  color: #57aecf;
 }
 .card {
   margin: 30px;
@@ -254,7 +254,7 @@ h2 {
     width: 50%;
     margin-left: 25%
   }
- 
+
 }
 
 @media only screen and (max-width: 600px) {
