@@ -514,7 +514,7 @@ a.social:hover {
   }
 
   header {
-    min-height: 470px;
+    min-height: 0px;
   }
 
   .nav {
@@ -616,9 +616,11 @@ header{
 
 .card{
   margin-top: 3.1em;
+  width: auto;
 }
 .shortCard{
   margin: auto;
+  margin-top: 50px
 }
 }
 
