@@ -248,6 +248,19 @@ h2 {
 }
 
 
+tr {
+    padding: 8px 12px;
+    border: 1px solid #5cdb94;
+    border-radius: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background-color: #5cdb94;
+    color: #065089;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
 @media only screen and (max-width: 600px) {
   .shortCard {
     width: 50%;
