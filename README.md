@@ -1,2 +1,1 @@
-# portfolioWebsite
-A website i designed for my portfolio
+# portfolio_update_v1
