@@ -98,7 +98,7 @@ header .profile-image:hover {
   text-align: center;
   background: #137acca8;
   border-bottom: 4px solid 	#960088;
-  border-radius: 6px;
+    border-radius: 6px;
   transition: all .5s;
 
 }
@@ -116,10 +116,10 @@ header .profile-image:hover {
     height: 50%;
 }
 .card:hover {
-  border-color: #002746
+  border-color: #002746;
 }
 .shortCard:hover {
-  border-color: #002746
+  border-color: #002746;
 }
 
 ul.skills {
@@ -187,16 +187,11 @@ a.social:hover {
   clear: both;
 }
 
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
 
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex;
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+  .card,.shortCard{
+    max-height: 50%;
+  }
+
   }
 
   header {
@@ -213,9 +208,11 @@ a.social:hover {
     padding-top: 20px;
   }
 
-  main p {
-    line-height: 1.6em;
-  }
+
+    main p {
+      line-height: 1.6em;
+      font-size: 15px;
+    }
 
   footer {
     font-size: 1.3em;
@@ -244,19 +241,15 @@ h2 {
 }
 
 
-.card-image{
-  width: 100%;
-  border-radius: 1.5em;
-}
 
 
 tr {
     padding: 8px 12px;
-    border: 1px solid #5cdb94;
+    /* border: 1px solid #5cdb94; */
     border-radius: 2px;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
-    background-color: #5cdb94;
+    /* background-color: #5cdb94; */
     color: #065089;
     text-decoration: none;
     font-weight: bold;
@@ -444,14 +437,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #c104ff85;
+  background: #f4d3ff47;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #960088;
+  background: #960088db;
 }
 
 footer {
@@ -529,12 +522,18 @@ a.social:hover {
 
   main p {
     line-height: 1.6em;
+    font-size: 12px;
+    font-weight: bold;
   }
 
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
+  }
+
+  .card{
+    margin-bottom: auto;
   }
 
 }
@@ -548,7 +547,7 @@ h2 {
 }
 
 .card a, .shortCard a{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -559,22 +558,25 @@ h2 {
 
 
 .card-image{
-  width: 100%;
+  width: 50%;
   border-radius: 1.5em;
+  max-height: 35%;
+  display: flow-root;
+  margin: auto;
 }
 
 
 tr {
-    padding: 8px 12px;
-    border: 1px solid #5cdb94;
-    border-radius: 2px;
-    font-family: Helvetica, Arial, sans-serif;
+    /* padding: 8px 12px; */
+    /* border: 1px solid #5cdb94; */
+    /* border-radius: 2px; */
+    /* font-family: Helvetica, Arial, sans-serif; */
     font-size: 14px;
-    background-color: #5cdb94;
-    color: #065089;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
+    /* background-color: #5cdb94; */
+    /* color: #065089; */
+    /* text-decoration: none; */
+    /* font-weight: bold; */
+    /* display: inline-block; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -622,6 +624,10 @@ header{
   margin: auto;
   margin-top: 50px
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
 }
 
 .icon {
@@ -633,4 +639,35 @@ header{
   height: 30px;
   background-size: 30px 30px;
   transition: all .5s;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a.email {
+  padding: 8px 12px;
+  font-family: Helvetica Arial, sans-serif;
+  font-size: 14px;
+  color: #a04998;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 4px solid 	#a04998;
+  border-radius: 6px;
+  transition: all .5s;
+  background-color: #5cdb94;
+}
+
+.email:hover {
+  border-color: #002746
+}
+
+.hobies-image{
+  width: 100%;
+  border-radius: 100em;
+  max-height: 35%;
+  display: flow-root;
+  margin: auto;
 }
