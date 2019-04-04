@@ -720,6 +720,16 @@ a.email {
 
 @font-face {
   font-family: 'Arvo';
-  font-display: auto;
+  font-display: swap;
   src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+
+div.card, div.shortCard{
+  color:#FA3605;
+  font-weight: bold;
+text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
