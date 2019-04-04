@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
   <body>
 
-    <div class="main-nav">
+    <div  class="main-nav">
         <ul class="nav">
           <li class="name">CodeOni</li>
           <li><a href="index.html">Home</a></li>
@@ -19,15 +19,22 @@
 
     <header>
       <a href="index.html" target="_blank">
+        <script type="text/javascript" src="portfolio.js"></script>
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
         <img id="headerImg" src="https://scontent-mia3-1.cdninstagram.com/vp/2bc21702e6c20b8bb7536ed292d59147/5D2D35C6/t51.2885-19/s150x150/53062045_453802738697982_8920045421888274432_n.jpg?_nc_ht=scontent-mia3-1.cdninstagram.com" title="Switch Pages" alt="Light Blue Computer" class="profile-image" >
       </a>
       <h1 class="tag name">Tyrique Daniel</h1>
       <p class="tag location"><b>Qualifications</b></p>
+
     </header>
-    <main class="flex">
+    <button class="contentButton"  onclick="toContent()">Read More</button>
 
+    <main id='content' class="flex">
 
-      <div class="shortCard">
+      <div class="shortCard" >
         <h2>Experience</h2>
         <ul class="skills">
           <li>C++</li>
@@ -68,7 +75,7 @@
           <table cellspacing="0" cellpadding="0">
               <tr>
                   <td style="border-radius: 2px;" >
-                      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyriquedaniel14@gmail.com,tyrique1.daniel@gmail.com&su=Programming-Inquiry&body=BODY" target="_blank" class="email">
+                      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tyriquedaniel14@gmail.com,tyrique1.daniel@gmail.com&su=Programming-Inquiry&body=BODY" target="_blank" class="emailButton, email">
                           Email Me
                       </a>
                   </td>
@@ -78,9 +85,10 @@
   </tr>
   </table>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 
-    <hr>
+    <hr id="content" >
     <footer>
       <ul>
         <li><a class=" icon" target="_blank">OniIcon</a></li>
@@ -112,4 +120,35 @@
 ::-webkit-scrollbar-thumb:hover {
 background-image: linear-gradient(to right, rgba(107, 255, 196, 1),  rgba(87, 174, 207, 1))}
 </style>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+if (window.innerWidth <= 699) {
+window.location = "https://codingoni.github.io/portfolioWebsite/";
+}
+
+ </script>
+ <script>
+function toContent() {
+  var elmnt = document.getElementById("content");
+  elmnt.scrollIntoView();
+}
+
+</script>
   </html>

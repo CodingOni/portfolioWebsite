@@ -16,16 +16,22 @@
           <a href="https://codingoni.github.io/portfolioWebsite/" target="_blank" class="mobile" title="Click if you are on mobile"></a>
         </ul>
     </div>
+    <button class="contentButton"  onclick="toContent()">Read More</button>
 
     <header>
         <a href="./experience.html" target="_blank">
+          <script type="text/javascript" src="path-to-javascript-file.js"></script>
+          <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
           <img src="https://scontent-mia3-1.cdninstagram.com/vp/2bc21702e6c20b8bb7536ed292d59147/5D2D35C6/t51.2885-19/s150x150/53062045_453802738697982_8920045421888274432_n.jpg?_nc_ht=scontent-mia3-1.cdninstagram.com" title="Switch Pages" alt="Light Blue Computer" class="profile-image" >
         </a>
         <h1 class="tag name">Tyrique Daniel</h1>
       <p class="tag location">About Me</p>
     </header>
 
-    <main class="flex">
+    <main id='content' class="flex">
       <div class="card">
         <h2>Background</h2>
         <p>I am in love with code, starting with my first website in high school.Where I built a simple webpage using only Javascript and HTML, to learning about how machine learning works in my College class. Programming is an ongoing process of learning and creating. This is what draws me to programming. I also love solving problems, being creative and love technology. I believe this is why I chose this as my career field. I hope you choose me as your programmer as I would be a great fit for your team or your needs. </p>
@@ -40,7 +46,7 @@
           <li>React.JS</li>
           <li>IOS Development</li>
           <li>Android Development</li>
-          <li>Machine Learning</li>
+          <li >Machine Learning</li>
         </ul>
       </div>
       <div class="shortCard">
@@ -74,7 +80,9 @@
   </tr>
 </table>
     </div>
-    <hr>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <hr >
     <footer>
       <ul>
         <li><a class=" icon" target="_blank">OniIcon</a></li>
@@ -106,5 +114,35 @@
 ::-webkit-scrollbar-thumb:hover {
 background-image: linear-gradient(to right, rgba(107, 255, 196, 1),  rgba(87, 174, 207, 1))}
 </style>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+if (window.innerWidth <= 699) {
+window.location = "https://codingoni.github.io/portfolioWebsite/";
+}
+
+ </script>
+ <script>
+function toContent() {
+  var elmnt = document.getElementById("content");
+  elmnt.scrollIntoView();
+}
+
+</script>
   </html>
