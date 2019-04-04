@@ -117,7 +117,7 @@
 ::-webkit-scrollbar-thumb:hover {
 background-image: linear-gradient(to right, rgba(107, 255, 196, 1),  rgba(87, 174, 207, 1))}
 </style>
-<script>
+<script defer>
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -134,14 +134,14 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-</script>
-<!-- <script>
+
+<!--
 if (window.innerWidth <= 699) {
 window.location = "https://codingoni.github.io/portfolioWebsite/";
 }
 
- </script> -->
- <script>
+  -->
+
 function toContent() {
   var elmnt = document.getElementById("content");
   elmnt.scrollIntoView();
