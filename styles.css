@@ -591,12 +591,14 @@ tr {
 }
 
 .mobile {
-    padding: 8px 1.3em;
+    /* padding: 8px 1px; */
     background-image: url(https://image.flaticon.com/icons/svg/254/254040.svg);
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #ffffff;
     display: inline-block;
+    margin:  auto;
+    padding: 20px;
 }
 @media only screen and (max-width: 600px) {
  header {
