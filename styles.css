@@ -512,19 +512,7 @@ a.social:hover {
 
   main p {
     line-height: 1.6em;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    font-size: 16px;
-=======
     font-size: 12px;
->>>>>>> parent of 188ad50... chrome-extension://cjbekgkpdcapoeodobalpefmkajpjcmp/library.js
-=======
-    font-size: 12px;
->>>>>>> parent of 188ad50... chrome-extension://cjbekgkpdcapoeodobalpefmkajpjcmp/library.js
-=======
-    font-size: 12px;
->>>>>>> parent of 188ad50... chrome-extension://cjbekgkpdcapoeodobalpefmkajpjcmp/library.js
     font-weight: bold;
   }
 
@@ -627,7 +615,7 @@ header{
   margin-top: 50px
 }
 
--webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 .skills li {
