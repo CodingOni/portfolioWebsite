@@ -349,7 +349,7 @@ body {
 
 header {
   text-align: center;
-  background: url('https://cdn.pixabay.com/photo/2016/08/03/09/03/universe-1566159_960_720.jpg') no-repeat top center;
+  background: url('./banner.jpg') no-repeat top center;
   /* background-size: cover; */
   overflow: hidden;
   padding-top: 60px;
