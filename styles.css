@@ -194,9 +194,10 @@ a.social:hover {
   }
 
 
-    main p {
-      line-height: 1.6em;
-      font-size: 15px;
+    .card p {
+      color: #46a29f;
+      /* line-height: 1.6em; */
+      /* font-size: 15px; */
     }
 
   footer {
@@ -301,7 +302,7 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #57aecf;
-    background: #003a65;
+    background: #0a0b10;
 }
 /* Link Styles */
 
@@ -390,11 +391,10 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: center;
-  background: #137acca8;
+  background: #171d29;
   border-bottom: 4px solid 	#960088;
   border-radius: 6px;
   transition: all .5s;
-
 }
 
 .shortCard {
@@ -682,8 +682,8 @@ a.email {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #fc4444;
-  color: #000000;
+  background-color: #c5c6c8;
+  color: #0a0b10;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -704,7 +704,7 @@ a.email {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #fc4444;
+  background-color: #c5c6c8;
   color: #000000;
   cursor: pointer;
   padding: x;
@@ -725,9 +725,9 @@ a.email {
 }
 
 div.card, div.shortCard{
-  color:#FA3605;
+  color: #66fcf1;
   font-weight: bold;
-text-shadow:
+  text-shadow:
    -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
