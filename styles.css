@@ -257,6 +257,19 @@ tr {
     font-size: 14px;
     color: #ffffff;
     display: inline-block;
+    opacity: 0.5;
+}
+
+.mobile:hover {
+    /* padding: 8px 1px; */
+    background-image: url(https://image.flaticon.com/icons/svg/254/254040.svg);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+    margin:  auto;
+    padding: 20px;
+    opacity: 1;
 }
 @media only screen and (max-width: 600px) {
  header {
@@ -748,4 +761,18 @@ div.card, div.shortCard{
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
+}
+
+a.email:hover {
+    padding: 8px 12px;
+    font-family: Helvetica Arial, sans-serif;
+    font-size: 14px;
+    color: #a04998;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 4px solid #a04998;
+    border-radius: 6px;
+    transition: all .5s;
+    background-color: #5cdb94;
 }
